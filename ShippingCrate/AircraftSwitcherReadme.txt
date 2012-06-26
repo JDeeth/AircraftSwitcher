@@ -1,12 +1,18 @@
-Dozer's Aircraft Switcher v0.11
+
+	Dozer's Aircraft Switcher
+
+	v0.11
+
+	26/June/2012
 
 Hello,
 
 This is Dozer's Aircraft Switcher, a plugin for quickly switching between up to eight aircraft. By using this package, you accept the disclaimer below. I hope you find this useful!
 
-This plugin is all of four hours old at present and probably has rough edges. It is only compiled for Windows at present, although I plan to put the source on github when I have a second.
+This plugin is all of four hours old at present and probably has rough edges. It is only compiled for Windows at present, but the source code is available on Github. If you'd like to compile this for Mac or Linux and include the file in this package, please let me know. The repository is here:
+https://github.com/JDeeth/AircraftSwitcher
 
-J Deeth 26/June/2012
+J Deeth
 
 [Installation]
 Put the files into your <X-Plane>/Resources/Plugins/folder. They should be located like this:
@@ -27,9 +33,16 @@ Generally, if XPLMSetUsersAircraft gets bad input, it will throw a useful error 
 
 This plugin has been thrown together very quickly and NOT thoroughly tested. It seems to work on Windows XP and X-Plane 9.70 - I have no capacity to test any other combination of systems. Use it at your own risk!
 
-
 [Contact information]
 Please PM me with feedback via the x-plane.org forums.
+Source code is on github here: https://github.com/JDeeth/AircraftSwitcher
+
+[Changelog]
+v0.11 2012/June/26
+Added mingw32-gcc .dll files to package
+
+v0.10 2012/June/25
+Initial version.
 
 [Acknowledgements]
 Thanks to:
