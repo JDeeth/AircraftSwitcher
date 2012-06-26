@@ -1,15 +1,19 @@
+Dozer's Aircraft Switcher v0.11
+
 Hello,
 
 This is Dozer's Aircraft Switcher, a plugin for quickly switching between up to eight aircraft. By using this package, you accept the disclaimer below. I hope you find this useful!
 
 This plugin is all of four hours old at present and probably has rough edges. It is only compiled for Windows at present, although I plan to put the source on github when I have a second.
 
-J Deeth 25/June/2012
+J Deeth 26/June/2012
 
 [Installation]
 Put the files into your <X-Plane>/Resources/Plugins/folder. They should be located like this:
 /Resources/Plugins/AircraftSwitcher/win.xpl
 /Resources/Plugins/AircraftSwitcher.ini
+
+Also, place the two .dll files in the "mingw dlls" folder into your root X-Plane directory, if they're not already there. They're needed because this plugin is compiled using mingw32-gcc and I haven't learned how static linking works yet. (mingwm10.dll and libgcc_s_dw2-1.dll .)
 
 [Configuration]
 Edit AircraftSwitcher.ini to use the paths of the aircraft you'd like to load.
