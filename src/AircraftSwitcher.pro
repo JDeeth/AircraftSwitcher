@@ -7,15 +7,15 @@ CONFIG -= thread qt rtti debug
 
 VERSION = 1.0.0
 
-INCLUDEPATH += ../tools/SDK/CHeaders/XPLM
-INCLUDEPATH += ../tools/SDK/CHeaders/Wrappers
-INCLUDEPATH += ../tools/SDK/CHeaders/Widgets
-INCLUDEPATH += ../tools/boost_1_49_0
-INCLUDEPATH += ../tools/OpenAL/src
-INCLUDEPATH += ../tools/Dozer/src
-INCLUDEPATH += ../tools/ppl/src
-INCLUDEPATH += ../tools/SimpleIni/src
-LIBS += -L../tools/ppl/libDozerAircraftSwitcher -lppl
+INCLUDEPATH += ../../tools/SDK/CHeaders/XPLM
+INCLUDEPATH += ../../tools/SDK/CHeaders/Wrappers
+INCLUDEPATH += ../../tools/SDK/CHeaders/Widgets
+INCLUDEPATH += ../../tools/boost_1_49_0
+INCLUDEPATH += ../../tools/OpenAL/src
+INCLUDEPATH += ../../tools/Dozer/src
+INCLUDEPATH += ../../tools/ppl/src
+INCLUDEPATH += ../../tools/SimpleIni/src
+LIBS += -L../../tools/ppl/libDozerAircraftSwitcher -lppl
 
 # Defined to use X-Plane SDK 2.0 capabilities - no backward compatibility before 9.0
 DEFINES += XPLM200
@@ -23,7 +23,7 @@ DEFINES += PRIVATENAMESPACE=DozerAircraftSwitcher
 
 win32 {
     DEFINES += APL=0 IBM=1 LIN=0
-    LIBS += -L../tools/SDK/Libraries/Win
+    LIBS += -L../../tools/SDK/Libraries/Win
     LIBS += -lXPLM -lXPWidgets
     TARGET = win.xpl
 }
@@ -51,4 +51,4 @@ HEADERS += \
 
 
 SOURCES += \
-	DozerAircraftSwitcher.cpp
+	AircraftSwitcher.cpp

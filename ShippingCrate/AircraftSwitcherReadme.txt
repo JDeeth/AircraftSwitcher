@@ -1,7 +1,7 @@
 
 	Dozer's Aircraft Switcher
 
-	v0.11
+	v0.12
 
 	26/June/2012
 
@@ -9,7 +9,7 @@ Hello,
 
 This is Dozer's Aircraft Switcher, a plugin for quickly switching between up to eight aircraft. By using this package, you accept the disclaimer below. I hope you find this useful!
 
-This plugin is all of four hours old at present and probably has rough edges. It is only compiled for Windows at present, but the source code is available on Github. If you'd like to compile this for Mac or Linux and include the file in this package, please let me know. The repository is here:
+This plugin is only compiled for Windows at present, but the source code is available on Github. If you'd like to compile this for Mac or Linux and include the file in this package, please let me know. The repository is here:
 https://github.com/JDeeth/AircraftSwitcher
 
 J Deeth
@@ -19,7 +19,9 @@ Put the files into your <X-Plane>/Resources/Plugins/folder. They should be locat
 /Resources/Plugins/AircraftSwitcher/win.xpl
 /Resources/Plugins/AircraftSwitcher.ini
 
-Also, place the two .dll files in the "mingw dlls" folder into your root X-Plane directory, if they're not already there. They're needed because this plugin is compiled using mingw32-gcc and I haven't learned how static linking works yet. (mingwm10.dll and libgcc_s_dw2-1.dll .)
+You may need the "Microsoft Visual C++ 2010 Redistributable Package (x86)". If the plugin does not work at first, you can download this package from here:
+http://www.microsoft.com/en-us/download/details.aspx?id=5555
+Run the installer and this should cause the plugin to work.
 
 [Configuration]
 Edit AircraftSwitcher.ini to use the paths of the aircraft you'd like to load.
@@ -38,6 +40,9 @@ Please PM me with feedback via the x-plane.org forums.
 Source code is on github here: https://github.com/JDeeth/AircraftSwitcher
 
 [Changelog]
+v0.12 2012/June/29
+Recompiled with MSVC instead of MinGW to avoid needing all the MinGW .dll files.
+
 v0.11 2012/June/26
 Added mingw32-gcc .dll files to package
 
